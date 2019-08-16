@@ -4,52 +4,45 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="10dp"
     android:background="#F9F3FC"
     android:backgroundTint="#F9F3FC"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".LogOutActivity">
 
-    <EditText
-        android:id="@+id/etDescription"
+    <TextView
+        android:id="@+id/tvLogOut"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Add a description"
-        android:inputType="none"
+        android:text="Do you really want to Log Out?"
         android:textAlignment="center"
+        android:textSize="24sp"
         android:textStyle="italic" />
 
     <Button
-        android:id="@+id/btnCaptureImage"
+        android:id="@+id/btnYes"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#657C88"
-        android:text="Take Photo"
-        android:textSize="18sp"
+        android:background="#129AE4"
+        android:text="Yes"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvOr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Or"
+        android:textAlignment="center"
+        android:textSize="16sp"
         android:textStyle="bold|italic" />
 
-    <ImageView
-        android:id="@+id/ivPostImage"
-        android:layout_width="250dp"
-        android:layout_height="250dp"
-        tools:srcCompat="@tools:sample/avatars[0]" />
-
     <Button
-        android:id="@+id/btnSubmit"
+        android:id="@+id/btnNo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#237AD1"
-        android:text="Submit"
+        android:background="#A3DF94"
+        android:text="No"
         android:textSize="16sp"
         android:textStyle="bold" />
 
-    <Button
-        android:id="@+id/btnLogOut"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#1BE7D0"
-        android:text="LogOut"
-        android:textSize="16sp"
-        android:textStyle="bold" />
 </LinearLayout>

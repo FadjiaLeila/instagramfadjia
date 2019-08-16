@@ -4,6 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#F9F3FC"
+    android:backgroundTint="#F9F3FC"
     android:orientation="vertical"
     tools:context=".SignUpActivity">
 
@@ -14,6 +16,7 @@
         android:ems="10"
         android:hint="Username"
         android:inputType="textPersonName" />
+
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -24,7 +27,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Password"
-            android:inputType="textPassword"/>
+            android:inputType="textPassword" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <EditText
@@ -39,5 +42,8 @@
         android:id="@+id/btnCreate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Create" />
+        android:background="#2CACF1"
+        android:text="Create"
+        android:textSize="24sp"
+        android:textStyle="bold" />
 </LinearLayout>
